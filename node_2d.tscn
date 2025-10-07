@@ -280,9 +280,11 @@ texture = ExtResource("1_epypp")
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.08992958, 0, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way_margin = 0.0
 6:1/0 = 0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, 8, -8, 8)
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 0.08992958, 8, 8, -8, 8, -8, -8)
+6:1/0/physics_layer_0/polygon_0/one_way_margin = 0.0
 8:1/0 = 0
 9:1/0 = 0
 10:1/0 = 0
@@ -1048,7 +1050,9 @@ texture = ExtResource("8_ir8iy")
 position = Vector2(-2153, 331)
 
 [node name="Player" parent="." instance=ExtResource("4_0hol4")]
-position = Vector2(-2999, 253)
+position = Vector2(-1182, -27)
+slide_on_ceiling = true
+floor_constant_speed = true
 
 [node name="Area2D" parent="." instance=ExtResource("9_4d7sh")]
 position = Vector2(-1906, 556)

@@ -116,10 +116,12 @@ radius = 18.027756
 [node name="Player" type="CharacterBody2D"]
 top_level = true
 position = Vector2(80, -33)
+slide_on_ceiling = false
 script = ExtResource("1_hjaqi")
 metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 rotation_smoothing_speed = 100.0
@@ -127,6 +129,7 @@ rotation_smoothing_speed = 100.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 0.5)
 shape = SubResource("CapsuleShape2D_iuf2t")
+debug_color = Color(0.6508302, 0.51983935, 1.92523e-07, 0.41960785)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_s4jxa")
@@ -145,6 +148,7 @@ stream = ExtResource("21_jrjdb")
 volume_db = -12.59
 
 [node name="ActionableFinder" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 16
 
