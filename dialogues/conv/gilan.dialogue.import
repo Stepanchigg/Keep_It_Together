@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://6u8p1xwelmuq"
+path="res://.godot/imported/gilan.dialogue-064ab2c8f1d6c0f8fb6d6111e7949378.tres"
+
+[deps]
+
+source_file="res://dialogues/conv/gilan.dialogue"
+dest_files=["res://.godot/imported/gilan.dialogue-064ab2c8f1d6c0f8fb6d6111e7949378.tres"]
+
+[params]
+
+defaults=true

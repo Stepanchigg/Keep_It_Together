@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://xarabrxu1d48"
+path="res://.godot/imported/chaki.dialogue-910ff60a8caa0a04ac632f94ab809d4f.tres"
+
+[deps]
+
+source_file="res://dialogues/conv/chaki.dialogue"
+dest_files=["res://.godot/imported/chaki.dialogue-910ff60a8caa0a04ac632f94ab809d4f.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://b6au2mua3vmoq"]
+
+[ext_resource type="Texture2D" uid="uid://cc5e18a80fklk" path="res://scene/анимации хотьбы/эльфийка/Sprite-00022323.png" id="1_6qcev"]
+[ext_resource type="Texture2D" uid="uid://bcy1tg4jqtbd6" path="res://scene/анимации хотьбы/эльфийка/Sprite-0003232323.png" id="2_sr47f"]
+[ext_resource type="Texture2D" uid="uid://d3dcmrjkobaxf" path="res://scene/анимации хотьбы/эльфийка/Sprite-000423232323.png" id="3_q4dyk"]
+[ext_resource type="Texture2D" uid="uid://075mx5obgf5u" path="res://scene/анимации хотьбы/эльфийка/Sprite-00052323232323.png" id="4_1xfiv"]
+[ext_resource type="PackedScene" uid="uid://ccubh2nh2op24" path="res://scene/actionable.tscn" id="5_q4dyk"]
+[ext_resource type="Resource" uid="uid://katlcwdtp8ab" path="res://dialogues/conv/siena.dialogue" id="6_1xfiv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6mmy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6qcev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sr47f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q4dyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1xfiv")
+}],
+"loop": true,
+"name": &"стоит",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d6mmy"]
+radius = 20.024984
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_d6mmy")
+animation = &"стоит"
+
+[node name="Actionable" parent="." instance=ExtResource("5_q4dyk")]
+dialogue_resource = ExtResource("6_1xfiv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_d6mmy")

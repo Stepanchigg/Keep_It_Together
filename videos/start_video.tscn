@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1w385oo2oui3"]
+
+[ext_resource type="Script" uid="uid://ckkkksayaaaq6" path="res://videos/start_video.gd" id="1_06gvy"]
+[ext_resource type="VideoStream" uid="uid://8o1r8ixtqvd5" path="res://videos/zubastic_entertainment.ogv" id="2_c1bd3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06gvy")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0500001
+anchor_bottom = 1.0430001
+offset_right = -57.600098
+offset_bottom = -27.864075
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_c1bd3")
+volume_db = -15.0
+autoplay = true
+expand = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

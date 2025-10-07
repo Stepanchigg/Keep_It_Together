@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=3 uid="uid://rfcfr2swwgc0"]
+
+[ext_resource type="Texture2D" uid="uid://ds6vfi7r6l7xu" path="res://scene/анимации хотьбы/голеаф/Sprite-000424.png" id="1_2xcxi"]
+[ext_resource type="Texture2D" uid="uid://bgips3edbswy5" path="res://scene/анимации хотьбы/голеаф/Sprite-000425.png" id="2_vg5ee"]
+[ext_resource type="Texture2D" uid="uid://ch066hoxxjbmy" path="res://scene/анимации хотьбы/голеаф/Sprite-000426.png" id="3_q4ykk"]
+[ext_resource type="Texture2D" uid="uid://dwr7bx38t58wq" path="res://scene/анимации хотьбы/голеаф/Sprite-000427.png" id="4_r4dph"]
+[ext_resource type="PackedScene" uid="uid://ccubh2nh2op24" path="res://scene/actionable.tscn" id="5_pogfu"]
+[ext_resource type="Resource" uid="uid://t4qfxfbygq5e" path="res://dialogues/conv/goleaph.dialogue" id="6_5ahdx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8mwps"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2xcxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vg5ee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q4ykk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r4dph")
+}],
+"loop": true,
+"name": &"стоит",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0dv7d"]
+radius = 20.024984
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8mwps")
+animation = &"стоит"
+frame_progress = 0.6022646
+
+[node name="Actionable" parent="." instance=ExtResource("5_pogfu")]
+dialogue_resource = ExtResource("6_5ahdx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_0dv7d")

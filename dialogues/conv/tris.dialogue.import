@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cbi6j2wvhcfdb"
+path="res://.godot/imported/tris.dialogue-2b3745d1e6ecb92ae8434abe58d5a1c3.tres"
+
+[deps]
+
+source_file="res://dialogues/conv/tris.dialogue"
+dest_files=["res://.godot/imported/tris.dialogue-2b3745d1e6ecb92ae8434abe58d5a1c3.tres"]
+
+[params]
+
+defaults=true

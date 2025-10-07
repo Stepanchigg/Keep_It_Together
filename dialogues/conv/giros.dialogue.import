@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://duvq351kvf8nu"
+path="res://.godot/imported/giros.dialogue-ad41b62cac1a43306796ec93981b5080.tres"
+
+[deps]
+
+source_file="res://dialogues/conv/giros.dialogue"
+dest_files=["res://.godot/imported/giros.dialogue-ad41b62cac1a43306796ec93981b5080.tres"]
+
+[params]
+
+defaults=true

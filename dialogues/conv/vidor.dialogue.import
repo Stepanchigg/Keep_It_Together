@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bx4yf0cgki3v6"
+path="res://.godot/imported/vidor.dialogue-d972228d936364dd8ae9f51ee392622e.tres"
+
+[deps]
+
+source_file="res://dialogues/conv/vidor.dialogue"
+dest_files=["res://.godot/imported/vidor.dialogue-d972228d936364dd8ae9f51ee392622e.tres"]
+
+[params]
+
+defaults=true

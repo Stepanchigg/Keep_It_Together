@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://iatvefk26nyf"]
+
+[ext_resource type="Script" uid="uid://146xhemfji3v" path="res://videos/end_video.gd" id="1_m617e"]
+[ext_resource type="VideoStream" uid="uid://dsat61skmww58" path="res://videos/ШКЯ-Макарошки.ogv" id="1_qcmpi"]
+
+[node name="EndVideo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m617e")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 886.0
+offset_bottom = 720.0
+stream = ExtResource("1_qcmpi")
+autoplay = true
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

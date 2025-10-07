@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://katlcwdtp8ab"
+path="res://.godot/imported/siena.dialogue-1f22a92088122eb3a7ba9b43ca0324af.tres"
+
+[deps]
+
+source_file="res://dialogues/conv/siena.dialogue"
+dest_files=["res://.godot/imported/siena.dialogue-1f22a92088122eb3a7ba9b43ca0324af.tres"]
+
+[params]
+
+defaults=true

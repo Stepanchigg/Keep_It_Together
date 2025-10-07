@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://ci3yl2vo4gb8q"]
+
+[ext_resource type="Texture2D" uid="uid://cbdx8g1poip4j" path="res://scene/анимации хотьбы/вор/Sprite-000232.png" id="1_6olio"]
+[ext_resource type="Texture2D" uid="uid://dmjby0yfdayfx" path="res://scene/анимации хотьбы/вор/Sprite-000233.png" id="2_gr6aj"]
+[ext_resource type="Texture2D" uid="uid://ge00hwe7q2f2" path="res://scene/анимации хотьбы/вор/Sprite-000234.png" id="3_2ikfh"]
+[ext_resource type="PackedScene" uid="uid://ccubh2nh2op24" path="res://scene/actionable.tscn" id="4_2ikfh"]
+[ext_resource type="Resource" uid="uid://6u8p1xwelmuq" path="res://dialogues/conv/gilan.dialogue" id="5_uydu1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eodad"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6olio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gr6aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2ikfh")
+}],
+"loop": true,
+"name": &"стоит",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qrfiu"]
+radius = 20.024984
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_eodad")
+animation = &"стоит"
+frame_progress = 0.6318808
+
+[node name="Actionable" parent="." instance=ExtResource("4_2ikfh")]
+dialogue_resource = ExtResource("5_uydu1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionable"]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_qrfiu")
