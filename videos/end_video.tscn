@@ -17,6 +17,5 @@ layout_mode = 0
 offset_right = 886.0
 offset_bottom = 720.0
 stream = ExtResource("1_qcmpi")
-autoplay = true
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

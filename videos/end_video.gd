@@ -1,6 +1,6 @@
 extends Control
 
-var video = preload("res://videos/end_video.tscn")
+var video = preload("res://_end_video.tscn")
 
 func _input(event: InputEvent):
 	if event.is_action_pressed('end'):
